@@ -115,7 +115,7 @@ app.get("/api/paypal/success", (req, res) => {
         transactions: [{
             amount: {
                 currency: "USD",
-                total: total: "30.00"
+                total: "30.00"
             }
         }]
     };

@@ -22,9 +22,10 @@ mongoose.connect(process.env.MONGO_URI, {
 });
 
 // Proste API
-app.get('/', (req, res) => {
-    res.send('🚀 API IPL Inseparable działa poprawnie!');
+app.get('/api', (req, res) => {
+    res.json({ message: '🔥 API IPL Inseparable działa poprawnie!' });
 });
+
 
 // Uruchomienie serwera
 app.listen(PORT, () => {
